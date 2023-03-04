@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    <meta name="description" content="小张的博客">
+    <meta name="author" content="静凇">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-redefine.png">
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/2023/03/02/set-up-the-sub-web-website/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Sub-Web搭建教程">
+    <meta property="og:description" content="小张的博客">
+    <meta property="og:url" content="http://example.com2023/03/02/Set-up-the-sub-web-website/">
+    <meta property="og:image" content="/images/rainbow.svg">
+    <meta property="og:site_name" content="记录工作学习生活的点滴">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sub-Web搭建教程">
+    <meta name="twitter:description" content="小张的博客">
+    <meta name="twitter:image" content="/images/rainbow.svg">
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/rainbow.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/rainbow.svg">
+    <meta name="theme-color" content="#005080">
+    <link rel="shortcut icon" href="/images/rainbow.svg">
+    
+    <title>
+        
+            Sub-Web搭建教程 -
+        
+        记录工作学习生活的点滴
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/assets/fonts.css">
+    
+    
+    
+    
+        <link rel="preconnect" href="https://evan.beee.top" crossorigin>
+    
+    <script id="hexo-configurations">
+    let REDEFINE = window.REDEFINE || {};
+    REDEFINE.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN"};
+    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/xiaozhang.jpg","favicon":"/images/rainbow.svg","article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_image":{"light":"https://evan.beee.top/img/wallhaven-wqery6-light.webp","dark":"https://evan.beee.top/img/wallhaven-wqery6-dark.webp"},"title_color":{"light":"#fff","dark":"#d1d1b6"},"description":"~ 欢迎来到小张的博客 ~","custom_font":{"enable":false,"font_family":null,"font_url":null}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":false,"preload":true},"code_block":{"copy":true,"style":"mac","custom_font":{"enable":false,"font_family":null,"font_url":null}},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"1.1.6","friend_links":{"columns":2},"home_article":{"date_format":"auto","category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":3}},"plugins":{"aplayer":{"enable":true,"audio":[{"name":"Imagine","artist":"John Lennon","url":"https://evan.beee.top/music/Imagine%20-%20John%20Lennon.mp3","cover":"D:\\1_1_hexo\\myblog\\source\\musics\\wmdr.jpg"},{"name":"Something Just Like This","artist":"Coldplay","url":"https://evan.beee.top/music/Something%20Just%20Like%20This%20-%20The%20Chainsmokers%E3%80%81Coldplay.mp3","cover":"https://evan.beee.top/music/covers/Something_Just_Like_This.png"}]}}};
+    REDEFINE.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+  </script>
+    
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/fontawesome/brands.min.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/fontawesome/solid.min.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/fontawesome/regular.min.css">
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="menu-wrapper">
+    
+    <div class="menu-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                记录工作学习生活的点滴
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        首页
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/archives"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-archive"></i>
+                                        
+                                        归档
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    target="_blank" rel="noopener" href="https://status.evanluo.top/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-chart-bar"></i>
+                                        
+                                        状态
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown" 
+                                    href="#" onClick="return false;">
+                                    
+                                        
+                                            <i class="fa-regular fa-user"></i>
+                                        
+                                        关于&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                    
+                                        <li>
+                                        <a href="/about">ME
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a target="_blank" rel="noopener" href="https://github.com/Zhang-Yirui">GITHUB
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/friends">FRIENDS
+                                        </a>
+                                        </li>
+                                    
+                                    </ul>
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="menu-drawer">
+        <ul class="drawer-menu-list">
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                首页
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/archives"  >
+                             
+                                
+                                    <i class="fa-regular fa-archive"></i>
+                                
+                                归档
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        target="_blank" rel="noopener" href="https://status.evanluo.top/"  >
+                             
+                                
+                                    <i class="fa-regular fa-chart-bar"></i>
+                                
+                                状态
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="has-dropdown" 
+                        href="#" onClick="return false;">
+                            
+                                
+                                    <i class="fa-regular fa-user"></i>
+                                
+                                关于&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                              
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/about">ME</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" target="_blank" rel="noopener" href="https://github.com/Zhang-Yirui">GITHUB</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/friends">FRIENDS</a>
+                            </li>
+                        
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            
+            
+                <div class="article-title">
+                    <h1 class="article-title-regular">Sub-Web搭建教程</h1>
+                </div>
+            
+                
+            
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/xiaozhang.jpg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">静凇</span>
+                            
+                                <span class="author-label">Lv1</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="pc">2023-03-02 21:06:58</span>
+        <span class="mobile">2023-03-02 21:06</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="pc">2023-03-02 21:11:13</span>
+            <span class="mobile">2023-03-02 21:11</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/sub-web-SubConverter/">sub-web SubConverter</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content markdown-body">
+                <h1 id="Sub-Web搭建教程！自行搭建Clash订阅转换平台，自建Sub-Web前端和SubConverter后端！"><a href="#Sub-Web搭建教程！自行搭建Clash订阅转换平台，自建Sub-Web前端和SubConverter后端！" class="headerlink" title="Sub-Web搭建教程！自行搭建Clash订阅转换平台，自建Sub-Web前端和SubConverter后端！"></a>Sub-Web搭建教程！自行搭建Clash订阅转换平台，自建Sub-Web前端和SubConverter后端！</h1><h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><h3 id="1-准备服务器"><a href="#1-准备服务器" class="headerlink" title="1.准备服务器"></a>1.准备服务器</h3><p>使用的系统为 <strong>Ubuntu20.04</strong></p>
+<h3 id="2-前端项目地址"><a href="#2-前端项目地址" class="headerlink" title="2.前端项目地址"></a>2.前端项目地址</h3><p><a class="link"   target="_blank" rel="noopener" href="https://github.com/CareyWang/sub-web" >sub-web <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="3-后端项目地址"><a href="#3-后端项目地址" class="headerlink" title="3.后端项目地址"></a>3.后端项目地址</h3><p><a class="link"   target="_blank" rel="noopener" href="https://github.com/tindy2013/subconverter" >subconverter <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="4-解析两个域名"><a href="#4-解析两个域名" class="headerlink" title="4.解析两个域名"></a>4.解析两个域名</h3><p><strong>前端</strong> 使用 <code>sub.xxx.xxx</code> 进行解析</p>
+<p><strong>后端</strong> 使用 <code>suc.xxx.xxx</code> 进行解析</p>
+<h2 id="二、安装BT面板并设置网站"><a href="#二、安装BT面板并设置网站" class="headerlink" title="二、安装BT面板并设置网站"></a>二、安装BT面板并设置网站</h2><p>自行百度安装</p>
+<p>新建两个站点 <code>sub.xxx.xxx</code> 和 <code>suc.xxx.xxx</code></p>
+<p>为这两个站点添加ssl证书且开启强制HTTPS</p>
+<h2 id="三、搭建Sub-Web前端"><a href="#三、搭建Sub-Web前端" class="headerlink" title="三、搭建Sub-Web前端"></a>三、搭建Sub-Web前端</h2><h3 id="1-更新系统并安装-Node-与-Yarn"><a href="#1-更新系统并安装-Node-与-Yarn" class="headerlink" title="1.更新系统并安装 Node 与 Yarn"></a>1.更新系统并安装 Node 与 Yarn</h3><p>依次运行下面四行代码</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update -y</span><br><span class="line">sudo apt install -y curl wget sudo nodejs npm git</span><br><span class="line">npm install -g yarn</span><br></pre></td></tr></table></figure></div>
+
+<p>命令执行完毕以后，运行下面的代码查询 Node 与 Yarn 是否安装成功，若是成功会返回版本号。</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">yarn --version</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="2-下载并安装-Sub-Web"><a href="#2-下载并安装-Sub-Web" class="headerlink" title="2.下载并安装 Sub-Web"></a>2.下载并安装 Sub-Web</h3><p>拉取 sub-web 程序，并进入 sub-web 文件夹</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/CareyWang/sub-web.git</span><br><span class="line"><span class="built_in">cd</span> sub-web</span><br></pre></td></tr></table></figure></div>
+
+<p>在项目目录中安装构建依赖项，构建的过程稍微有点长</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn install</span><br></pre></td></tr></table></figure></div>
+
+<p>使用 webpack 运行 Web 客户端以进行本地开发</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn serve</span><br></pre></td></tr></table></figure></div>
+
+<p>到目前为止，浏览器访问 http:&#x2F;&#x2F;服务器ip:8080&#x2F; 应该可以进行前端 sub-web 的预览了，记得放行端口。</p>
+<h3 id="3-修改默认后端地址"><a href="#3-修改默认后端地址" class="headerlink" title="3.修改默认后端地址"></a>3.修改默认后端地址</h3><p>找到 <code>sub-web/src/views/Subconverter.vue</code> 文件</p>
+<p>找到 <code>backendOptions:</code>，替换后面的 <code>http://127.0.0.1:25500/sub?</code> 为 <code>https://suc.xxx.xxx/sub?</code></p>
+<p>如果要将自己的域名设为默认地址，找到 <code>defaultBackend</code>，将 <code>=</code> 后的内容替换为上面的地址</p>
+<p><strong>tips: 域名为你刚才准备的后端域名，是 https 而非 http</strong></p>
+<h3 id="4-更换远程规则"><a href="#4-更换远程规则" class="headerlink" title="4.更换远程规则"></a>4.更换远程规则</h3><p>因为这个版本更新以后，规则方面很少，经常用到的一些经典的 ACL4SSR 的规则并没有集成，大家可以看看，若是有，就不需要这样操作。</p>
+<p>找到 <code>sub-web/src/views/Subconverter.vue</code> 文件，找到 <code>remoteConfig: [</code>，敲下回车，插入下面内容。</p>
+<div class="highlight-container" data-rel="Json"><figure class="iseeu highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">            label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR&quot;</span><span class="punctuation">,</span></span><br><span class="line">            options<span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_Online 默认版 分组比较全 (与Github同步)&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span></span><br><span class="line">                  <span class="string">&quot;https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_Online_AdblockPlus 更多去广告 (与Github同步)&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span></span><br><span class="line">                  <span class="string">&quot;https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_AdblockPlus.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_Online_NoAuto 无自动测速 (与Github同步)&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span></span><br><span class="line">                  <span class="string">&quot;https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoAuto.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_Online_NoReject 无广告拦截规则 (与Github同步)&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span></span><br><span class="line">                  <span class="string">&quot;https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoReject.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_Online_Mini 精简版 (与Github同步)&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span></span><br><span class="line">                  <span class="string">&quot;https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_Online_Mini_AdblockPlus.ini 精简版 更多去广告 (与Github同步)&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span></span><br><span class="line">                  <span class="string">&quot;https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_AdblockPlus.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_Online_Mini_NoAuto.ini 精简版 不带自动测速 (与Github同步)&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span></span><br><span class="line">                  <span class="string">&quot;https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_NoAuto.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_Online_Mini_Fallback.ini 精简版 带故障转移 (与Github同步)&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span></span><br><span class="line">                  <span class="string">&quot;https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_Fallback.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_Online_Mini_MultiMode.ini 精简版 自动测速、故障转移、负载均衡 (与Github同步)&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span></span><br><span class="line">                  <span class="string">&quot;https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_Online_Full 全分组 重度用户使用 (与Github同步)&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span></span><br><span class="line">                  <span class="string">&quot;https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_Online_Full_NoAuto.ini 全分组 无自动测速 重度用户使用 (与Github同步)&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span></span><br><span class="line">                  <span class="string">&quot;https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_Online_Full_AdblockPlus 全分组 重度用户使用 更多去广告 (与Github同步)&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span></span><br><span class="line">                  <span class="string">&quot;https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_AdblockPlus.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_Online_Full_Netflix 全分组 重度用户使用 奈飞全量 (与Github同步)&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span></span><br><span class="line">                  <span class="string">&quot;https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_Netflix.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR 本地 默认版 分组比较全&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span> <span class="string">&quot;config/ACL4SSR.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_Mini 本地 精简版&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span> <span class="string">&quot;config/ACL4SSR_Mini.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_Mini_NoAuto.ini 本地 精简版+无自动测速&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span> <span class="string">&quot;config/ACL4SSR_Mini_NoAuto.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_Mini_Fallback.ini 本地 精简版+fallback&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span> <span class="string">&quot;config/ACL4SSR_Mini_Fallback.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_BackCN 本地 回国&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span> <span class="string">&quot;config/ACL4SSR_BackCN.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_NoApple 本地 无苹果分流&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span> <span class="string">&quot;config/ACL4SSR_NoApple.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_NoAuto 本地 无自动测速 &quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span> <span class="string">&quot;config/ACL4SSR_NoAuto.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_NoAuto_NoApple 本地 无自动测速&amp;无苹果分流&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span> <span class="string">&quot;config/ACL4SSR_NoAuto_NoApple.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_NoMicrosoft 本地 无微软分流&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span> <span class="string">&quot;config/ACL4SSR_NoMicrosoft.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">              <span class="punctuation">&#123;</span></span><br><span class="line">                label<span class="punctuation">:</span> <span class="string">&quot;ACL4SSR_WithGFW 本地 GFW列表&quot;</span><span class="punctuation">,</span></span><br><span class="line">                value<span class="punctuation">:</span> <span class="string">&quot;config/ACL4SSR_WithGFW.ini&quot;</span></span><br><span class="line">              <span class="punctuation">&#125;</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">          <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="5-配置完毕刷新前端网页"><a href="#5-配置完毕刷新前端网页" class="headerlink" title="5.配置完毕刷新前端网页"></a>5.配置完毕刷新前端网页</h3><p>配置完毕以后，程序会自动更新，再次刷新前端网页，会出现刚才添加的相关规则</p>
+<p>至此，我们的前端搭建完毕，我们现在需要打包，生成一个发布目录</p>
+<p>首先停止调试程序，CTRL+C ，退出当前调试，然后执行下面的命令进行打包：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn build</span><br></pre></td></tr></table></figure></div>
+
+<p>执行以下打包命令，在 <code>sub-web</code> 目录下面会生成一个 <code>dist</code> 目录，这个目录即为网页的发布目录。</p>
+<h3 id="6-发布订阅转换网站"><a href="#6-发布订阅转换网站" class="headerlink" title="6.发布订阅转换网站"></a>6.发布订阅转换网站</h3><p>将 <code>sub-web/dist</code> 下的文件拷贝至 <code>sub.xxx.xxx</code> 站点的目录下</p>
+<h2 id="四、SubConverter后台搭建"><a href="#四、SubConverter后台搭建" class="headerlink" title="四、SubConverter后台搭建"></a>四、SubConverter后台搭建</h2><h3 id="1-下载并解压后端程序"><a href="#1-下载并解压后端程序" class="headerlink" title="1.下载并解压后端程序"></a>1.下载并解压后端程序</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /root</span><br><span class="line">wget https://github.com/tindy2013/subconverter/releases/download/v0.6.3/subconverter_linux64.tar.gz</span><br><span class="line">tar -zxvf subconverter_linux64.tar.gz</span><br></pre></td></tr></table></figure></div>
+
+<p>完成以后，在 <code>/root</code> 文件夹下会多出一个 <code>subconverter</code> 的文件夹，这个就是我们的后端程序</p>
+<h3 id="2-修改配置文件参数"><a href="#2-修改配置文件参数" class="headerlink" title="2.修改配置文件参数"></a>2.修改配置文件参数</h3><p>现在需要修改后端配置文件中的一些参数</p>
+<p>找到文件 <code>/root/subconverter/pref.ini</code> ，找到如下参数进行修改</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">api_access_token=123123dfsdsdfsdfsdf            <span class="comment">#随意设置自己知道就行</span></span><br><span class="line">managed_config_prefix=https://suc.v2rayssr.com  <span class="comment">#设置成我们刚刚解析的后端域名</span></span><br><span class="line">listen=127.0.0.1                                <span class="comment">#这里改成 127.0.0.1 进行反代</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="创建服务进程并启动"><a href="#创建服务进程并启动" class="headerlink" title="创建服务进程并启动"></a>创建服务进程并启动</h3><p>进入目录 <code>/etc/systemd/system</code>，创建一个名为 <code>sub.service</code> 的文件</p>
+<p>打开文件，贴入以下内容，保存。</p>
+<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=A API For Subscription Convert</span><br><span class="line">After=network.target</span><br><span class="line"> </span><br><span class="line">[Service]</span><br><span class="line">Type=simple</span><br><span class="line">ExecStart=/root/subconverter/subconverter</span><br><span class="line">WorkingDirectory=/root/subconverter</span><br><span class="line">Restart=always</span><br><span class="line">RestartSec=10</span><br><span class="line"> </span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure></div>
+
+<p>检查运行状态以及设置开机自启</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl start sub</span><br><span class="line">systemctl <span class="built_in">enable</span> sub</span><br><span class="line">systemctl status sub</span><br></pre></td></tr></table></figure></div>
+
+<p>到这里，后端也就搭建完毕了，我们现在可以在浏览器里面访问我们的后端了，正常的话会显示 <code>subconverter v0.6.3 backend</code></p>
+
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    <div class="article-copyright-info-container">
+    <ul>
+        <li>本文标题：Sub-Web搭建教程</li>
+        <li>本文作者：静凇</li>
+        <li>创建时间：2023-03-02 21:06:58</li>
+        <li>
+            本文链接：https://redefine.ohevan.com/2023/03/02/Set-up-the-sub-web-website/
+        </li>
+        <li>
+            版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
+        </li>
+    </ul>
+</div>
+
+                </div>
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/sub-web-SubConverter/">#sub-web SubConverter</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                            rel="prev"
+                            href="/2023/03/03/hello-world/"
+                            >
+                                <span class="left arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </span>
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">Hello World</span>
+                                    <span class="post-nav-item">上一篇</span>
+                                </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/2023/03/02/install-nodejs-in-Ubuntu/"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">在 Ubuntu 上安装 node.js</span>
+                                    <span class="post-nav-item">下一篇</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">此页目录</div>
+        <div class="page-title">Sub-Web搭建教程</div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Sub-Web%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%81%E8%87%AA%E8%A1%8C%E6%90%AD%E5%BB%BAClash%E8%AE%A2%E9%98%85%E8%BD%AC%E6%8D%A2%E5%B9%B3%E5%8F%B0%EF%BC%8C%E8%87%AA%E5%BB%BASub-Web%E5%89%8D%E7%AB%AF%E5%92%8CSubConverter%E5%90%8E%E7%AB%AF%EF%BC%81"><span class="nav-text">Sub-Web搭建教程！自行搭建Clash订阅转换平台，自建Sub-Web前端和SubConverter后端！</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="nav-text">一、准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%87%86%E5%A4%87%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-text">1.准备服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80"><span class="nav-text">2.前端项目地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80"><span class="nav-text">3.后端项目地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E8%A7%A3%E6%9E%90%E4%B8%A4%E4%B8%AA%E5%9F%9F%E5%90%8D"><span class="nav-text">4.解析两个域名</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%AE%89%E8%A3%85BT%E9%9D%A2%E6%9D%BF%E5%B9%B6%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99"><span class="nav-text">二、安装BT面板并设置网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E6%90%AD%E5%BB%BASub-Web%E5%89%8D%E7%AB%AF"><span class="nav-text">三、搭建Sub-Web前端</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%9B%B4%E6%96%B0%E7%B3%BB%E7%BB%9F%E5%B9%B6%E5%AE%89%E8%A3%85-Node-%E4%B8%8E-Yarn"><span class="nav-text">1.更新系统并安装 Node 与 Yarn</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E4%B8%8B%E8%BD%BD%E5%B9%B6%E5%AE%89%E8%A3%85-Sub-Web"><span class="nav-text">2.下载并安装 Sub-Web</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E5%90%8E%E7%AB%AF%E5%9C%B0%E5%9D%80"><span class="nav-text">3.修改默认后端地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E6%9B%B4%E6%8D%A2%E8%BF%9C%E7%A8%8B%E8%A7%84%E5%88%99"><span class="nav-text">4.更换远程规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E9%85%8D%E7%BD%AE%E5%AE%8C%E6%AF%95%E5%88%B7%E6%96%B0%E5%89%8D%E7%AB%AF%E7%BD%91%E9%A1%B5"><span class="nav-text">5.配置完毕刷新前端网页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85%E8%BD%AC%E6%8D%A2%E7%BD%91%E7%AB%99"><span class="nav-text">6.发布订阅转换网站</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81SubConverter%E5%90%8E%E5%8F%B0%E6%90%AD%E5%BB%BA"><span class="nav-text">四、SubConverter后台搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E4%B8%8B%E8%BD%BD%E5%B9%B6%E8%A7%A3%E5%8E%8B%E5%90%8E%E7%AB%AF%E7%A8%8B%E5%BA%8F"><span class="nav-text">1.下载并解压后端程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%8F%82%E6%95%B0"><span class="nav-text">2.修改配置文件参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%9C%8D%E5%8A%A1%E8%BF%9B%E7%A8%8B%E5%B9%B6%E5%90%AF%E5%8A%A8"><span class="nav-text">创建服务进程并启动</span></a></li></ol></li></ol></li></ol>
+
+    </div>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+
+                
+
+            </div>
+
+
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2020</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-regular fa-computer-classic"></i>&nbsp;&nbsp;<a href="/">静凇</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a> 驱动</span>
+                <br> 
+            <span class="theme-version-container">主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v1.1.6</a>
+        </div>
+        
+        
+        
+            <div id="start_time_div" style="display:none">
+                2020/10/1 00:00:00
+            </div>
+            <div>
+                博客已运行 <span class="odometer" id="runtime_days" ></span> 天 <span class="odometer" id="runtime_hours"></span> 小时 <span class="odometer" id="runtime_minutes"></span> 分钟 <span class="odometer" id="runtime_seconds"></span> 秒
+            </div>
+        
+        
+        
+            <script async data-pjax>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="unfolded-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="folded-tools-list">
+        <li class="right-bottom-tools tool-toggle-show flex-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+
+</main>
+
+
+
+<script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/utils.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/main.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/layouts/menu-shrink.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/tools/go-top-bottom.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/tools/dark-light-toggle.js"></script>
+
+
+
+
+    <script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/tools/code-block.js"></script>
+
+
+
+    <script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/layouts/lazyload.js"></script>
+
+
+
+    <script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/tools/runtime.js"></script>
+    <script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/layouts/odometer.min.js"></script>
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/assets/odometer-theme-minimal.css">
+
+
+
+
+<div class="post-scripts pjax">
+    
+        <script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/tools/toc-toggle.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/libs/anime.min.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/layouts/toc.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/plugins/tabs.js"></script>
+    
+    
+</div>
+
+
+    <script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            REDEFINE.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            REDEFINE.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            REDEFINE.refresh();
+        });
+    });
+</script>
+
+
+
+
+    <div id="aplayer"></div>
+
+    <script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/libs/APlayer.min.js"></script>
+    <script src="//evan.beee.top/projects/hexo-theme-redefine/v1.1.6/source/js/plugins/aplayer.js"></script>
+
+
+</body>
+</html>
